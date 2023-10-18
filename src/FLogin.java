@@ -7,12 +7,12 @@
  *
  * @author SMK ADVENT BATAM 11
  */
-public class FFLogin extends javax.swing.JFrame {
+public class FLogin extends javax.swing.JFrame {
 
     /**
-     * Creates new form FFLogin
+     * Creates new form FLogin
      */
-    public FFLogin() {
+    public FLogin() {
         initComponents();
     }
 
@@ -25,20 +25,37 @@ public class FFLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jPasswordField3 = new javax.swing.JPasswordField();
+        jPanel1 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jPasswordField3 = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jDesktopPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel15.setText("Username/ID");
+
+        jLabel16.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel16.setText("Password");
+
+        jLabel17.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("Tidak memiliki akun?");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imageedit_1_2405081180.png"))); // NOI18N
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo-alfamart.jpg"))); // NOI18N
 
@@ -60,45 +77,18 @@ public class FFLogin extends javax.swing.JFrame {
             }
         });
 
-        jLabel15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel15.setText("Username/ID");
-
-        jLabel16.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel16.setText("Password");
-
-        jLabel17.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("Tidak memiliki akun?");
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imageedit_1_2405081180.png"))); // NOI18N
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
-        jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel18, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jButton3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jPasswordField3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel15, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel16, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel17, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jTextField1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                .addContainerGap(150, Short.MAX_VALUE)
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(154, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(129, 129, 129))
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
                     .addComponent(jLabel16)
                     .addComponent(jLabel15)
@@ -108,16 +98,16 @@ public class FFLogin extends javax.swing.JFrame {
                     .addComponent(jTextField1))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(44, 44, 44)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(37, 37, 37))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -132,28 +122,26 @@ public class FFLogin extends javax.swing.JFrame {
                 .addComponent(jLabel17)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel18)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(331, Short.MAX_VALUE)
-                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(186, 186, 186))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(354, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
         FRegister n = new FRegister();
@@ -161,13 +149,9 @@ public class FFLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel18MouseClicked
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        FRegister n = new FRegister();
+        Beranda n = new Beranda();
         n.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,33 +170,33 @@ public class FFLogin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FFLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FFLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FFLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FFLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FFLogin().setVisible(true);
+                new FLogin().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton3;
-    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField3;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -23,25 +23,17 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="331" max="32767" attributes="0"/>
-              <Component id="jDesktopPane1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-              <Component id="jDesktopPane1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="354" max="32767" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JDesktopPane" name="jDesktopPane1">
+    <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -52,7 +44,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="150" max="32767" attributes="0"/>
+                  <EmptySpace pref="154" max="32767" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
               </Group>
@@ -60,13 +52,13 @@
                   <Component id="jLabel2" min="-2" pref="216" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jButton3" pref="200" max="32767" attributes="0"/>
+                      <Component id="jButton3" alignment="0" pref="200" max="32767" attributes="0"/>
                       <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jPasswordField3" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jTextField1" max="32767" attributes="0"/>
+                      <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
@@ -99,12 +91,48 @@
                   <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="35" max="32767" attributes="0"/>
+                  <EmptySpace pref="36" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel15">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Username/ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel16">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="12" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Password"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel17">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Tidak memiliki akun?"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imageedit_1_2405081180.png"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField1">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+          </Events>
+        </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -141,42 +169,6 @@
           </Events>
         </Component>
         <Component class="javax.swing.JPasswordField" name="jPasswordField3">
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel15">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="12" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Username/ID"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel16">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="12" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Password"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel17">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Tidak memiliki akun?"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel2">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imageedit_1_2405081180.png"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>
